@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+.hero{
+    height: 100vh;
+    background-color:darkslateblue;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 24rem;
+    gap: 2rem;
+}
+.faq{
+    background-color: white;
+    color: gray;
+    text-align: left;
+    padding: 10rem 16rem;
+    justify-content: end;
+    gap: 4rem;
+}
+
+h1{
+    font-size:6ch;
+}
+h1, h2, h3, h4{
+    font-weight: normal;
+
+}
+
+.faqs{
+    display: flex;
+    gap: 3rem;
+}
+.faq-item{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.faq-title{
+    font-weight: bold;
+}
+
+body{
+    position: relative;
+}
+.card-container{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    gap: 2rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.15s ease-in;
+}
+
+.card-class{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    color: white;
+    background-color:rgb(30, 30, 30);
+    font-size: 1.5ch;
+}
+
+.card-content{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.card-price{
+    display: flex;
+    justify-content: center;
+    height: 4.25rem;
+    font-size: ch;
+}
+.card-price .monthly{
+    display: flex;
+    align-items: end;
+}
+.card-price div{
+    color: gray;
+}
+.card-price h1{
+    font-size: 8ch;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: darkgray;
+}
+.card-desc{
+    width: 100%;
+}
+.card-buy{
+    padding: 0.7rem 0;
+    background-color: blue;
+    width: 70%;
+    color: white;
+    border: none;
+    border-radius:3px;
+    cursor: pointer;
+}
